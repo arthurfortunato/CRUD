@@ -1,9 +1,11 @@
 import {Logo} from './styles.js'
 
 const logo = () => {
-    <Logo>
-        Logo
-    </Logo>
+    return (
+        <Logo>
+            Logo
+        </Logo>
+    )
 }
 
 export default logo;

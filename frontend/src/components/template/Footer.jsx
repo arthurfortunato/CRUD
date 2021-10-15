@@ -1,9 +1,11 @@
 import { Footer } from './styles'
 
 const footer = () => {
-    <Footer>
+    return (
+        <Footer>
         Rodapé
-    </Footer>
+        </Footer>
+    )
 }
 
 export default footer;

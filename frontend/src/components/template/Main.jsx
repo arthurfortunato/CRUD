@@ -3,12 +3,14 @@ import Header from './Header'
 import { Main } from './styles';
 
 const main = () => {
-    <React.Fragment>
+    return (
+        <React.Fragment>
         <Header />
         <Main>
             Conteúdo
         </Main>
-    </React.Fragment>
+        </React.Fragment>
+    )
 }
 
 export default main;

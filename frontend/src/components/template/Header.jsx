@@ -1,9 +1,11 @@
 import { Header } from './styles';
 
 const header = ()=> {
-    <Header >
+    return (
+        <Header >
         Cabeçalho
-    </Header>
+        </Header>
+    )
 }
 
 export default header;

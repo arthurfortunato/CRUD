@@ -1,9 +1,11 @@
 import { Nav } from './styles';
 
 const nav = () => {
-    <Nav >
+    return (
+        <Nav >
         Navegação
-    </Nav>
+        </Nav>
+    )
 }
 
 export default nav;
