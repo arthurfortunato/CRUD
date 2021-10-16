@@ -1,10 +1,9 @@
-import { Logo } from './styles.js'
+import { Logo } from './styles.js';
+import logoCrud from '../../assets/imgs/logo.svg';
 
 const logo = () => {
     return (
-        <Logo>
-            Logo
-        </Logo>
+        <Logo src={logoCrud} alt="Logo do projeto" />
     )
 }
 

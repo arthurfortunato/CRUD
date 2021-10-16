@@ -1,9 +1,11 @@
-import { Footer } from './styles'
+import { Footer } from './styles';
 
 const footer = () => {
     return (
         <Footer>
-        Rodapé
+            <span>
+                Desenvolvido por <strong> @luizarthur.Fortunato </strong>
+            </span>
         </Footer>
     )
 }
