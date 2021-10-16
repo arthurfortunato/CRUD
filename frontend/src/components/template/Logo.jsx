@@ -1,8 +1,8 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { Logo } from './styles.js';
 import logoCrud from '../../assets/imgs/logo.svg';
 
-export default logo => 
+export default function logo() {
+  return  <Logo src={logoCrud} alt="Logo do projeto" />
+}
 
-        <Logo src={logoCrud} alt="Logo do projeto" />
 
