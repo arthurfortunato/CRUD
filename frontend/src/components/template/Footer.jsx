@@ -1,13 +1,11 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { Footer } from './styles';
 
-const footer = () => {
-    return (
+export default footer => 
         <Footer>
             <span>
-                Desenvolvido por <strong> @luizarthur.Fortunato </strong>
+                Desenvolvido com <i className="fa fa-heart text-danger"></i> por 
+                <strong> @luizarthur.
+                <span className="text-danger">F</span>ortunato </strong>
             </span>
         </Footer>
-    )
-}
-
-export default footer;

@@ -4,7 +4,9 @@ import { Main } from './styles';
 const main = () => {
     return (
             <Main>
-                Conteúdo
+                <Main>
+                    Conteudo
+                </Main>
             </Main>
     )
 }

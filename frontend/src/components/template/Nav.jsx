@@ -1,11 +1,15 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { Nav } from './styles';
 
-const nav = () => {
-    return (
-        <Nav >
-        Navegação
-        </Nav>
-    )
-}
+export default nav =>
 
-export default nav;
+    <Nav >
+        <a href="#/">
+            <i className="fa fa-home"></i> Início
+        </a>
+        <a href="#/users">
+            <i className="fa fa-users"></i> Usuários
+        </a>
+
+    </Nav>
+
