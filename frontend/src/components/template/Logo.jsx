@@ -1,4 +1,4 @@
-import {Logo} from './styles.js'
+import { Logo } from './styles.js'
 
 const logo = () => {
     return (
