@@ -8,8 +8,8 @@ import theme from './theme';
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <Reset />    
-            <Home />
+            <Reset />  
+            <Home />  
         </ThemeProvider>
     );
 }
