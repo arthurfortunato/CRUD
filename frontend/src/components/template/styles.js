@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const Logo = styled.img`
    height: 100px;
-   margin-left: 50px
+   width: 100%;
+
+   @media(max-width: 768px) {
+    display: block;
+}
 `;
 
 export const Nav = styled.aside`
@@ -18,6 +22,20 @@ export const Nav = styled.aside`
 
     a:hover {
         background: ${(props) => props.theme.colors.gradient};
+    }
+
+    @media(max-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+
+        a:hover {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
     }
 `;
 
@@ -39,6 +57,11 @@ export const Header = styled.header`
         justify-content: flex-end;
         height: 40px;
     }
+
+    @media(max-width: 768px) {
+        display: none;
+    }
+
 `;
 
 export const Main = styled.aside`
@@ -47,6 +70,10 @@ export const Main = styled.aside`
     .main{
         box-shadow: ${(props) => props.theme.colors.shadowMain};
         background-color: #fff;
+    }
+
+    @media(max-width: 768px) {
+        font-size: 12px;
     }
 `;
 
@@ -58,5 +85,12 @@ export const Footer = styled.footer`
     background-color: #fff;
     padding: 0 25px;
     box-shadow: ${(props) => props.theme.colors.shadow};
+
+    @media(max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
     
 `;
+

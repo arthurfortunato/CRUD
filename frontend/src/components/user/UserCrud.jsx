@@ -10,7 +10,7 @@ const headerProps = {
 
 const baseUrl = 'http://localhost:3001/users'
 const initialState = {
-    user: { name: '', email: ''}, 
+    user: { name: '', email: '' },
     list: []
 }
 
@@ -20,7 +20,7 @@ export default class UserCrud extends Component {
 
     componentWillMount() {
         axios(baseUrl).then(resp => {
-            this.setState({ list: resp.data})
+            this.setState({ list: resp.data })
         })
     }
 
@@ -35,21 +35,21 @@ export default class UserCrud extends Component {
         axios[method](url, user)
             .then(resp => {
                 const list = this.getUpdatedList(resp.data)
-                this.setState({ user : initialState.user, list })
+                this.setState({ user: initialState.user, list })
             })
 
     }
 
     getUpdatedList(user, add = true) {
         const list = this.state.list.filter(u => u.id !== user.id)
-        if(add) list.unshift(user)
+        if (add) list.unshift(user)
         return list
     }
 
     updateField(event) {
         const user = { ...this.state.user }
         user[event.target.name] = event.target.value
-        this.setState({user})
+        this.setState({ user })
     }
 
     renderForm() {
@@ -58,8 +58,8 @@ export default class UserCrud extends Component {
                 <div className="row">
                     <div className="col-12 col-md-6">
                         <div className="form-group">
-                            <label>Nome</label>
-                            <input type="text" className="form-control mt-2" 
+                            <label className="mt-2">Nome</label>
+                            <input type="text" className="form-control mt-2"
                                 name="name"
                                 value={this.state.user.name}
                                 onChange={e => this.updateField(e)}
@@ -68,7 +68,7 @@ export default class UserCrud extends Component {
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="form-group">
-                            <label>E-mail</label>
+                            <label className="mt-2">E-mail</label>
                             <input type="text" className="form-control mt-2"
                                 name="email"
                                 value={this.state.user.email}
@@ -82,12 +82,12 @@ export default class UserCrud extends Component {
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end">
                         <button className="btn btn-primary"
-                        onClick={e => this.save(e)}>
+                            onClick={e => this.save(e)}>
                             Salvar
                         </button>
-                        
+
                         <button className="btn btn-secondary mx-2"
-                        onClick={e => this.clear(e)}>
+                            onClick={e => this.clear(e)}>
                             Cancelar
                         </button>
                     </div>
@@ -103,9 +103,9 @@ export default class UserCrud extends Component {
 
     remove(user) {
         axios.delete(`${baseUrl}/${user.id}`).then(resp => {
-                const list = this.getUpdatedList(user, false)
-                this.setState({ list })
-            })
+            const list = this.getUpdatedList(user, false)
+            this.setState({ list })
+        })
     }
 
     renderTable() {
@@ -145,7 +145,7 @@ export default class UserCrud extends Component {
             )
         })
     }
-    
+
     render() {
         return (
             <Main {...headerProps}>
