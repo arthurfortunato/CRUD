@@ -14,7 +14,7 @@ Projeto desenvolvido na plataforma da **[Udemy](https://www.udemy.com/)**, reali
 
 
 <p align="center">
-  <img alt="CRUD" src="./frontend/src/assets/imgs/Landing.png" height="70%" width="70%">
+  <img alt="CRUD" src="./frontend/src/assets/imgs/Landing.png"  width="95%">
 </p>
 
 
