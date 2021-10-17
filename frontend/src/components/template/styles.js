@@ -43,7 +43,7 @@ export const Header = styled.header`
 export const Main = styled.aside`
     height: 100%;
     
-    div {
+    .main{
         box-shadow: ${(props) => props.theme.colors.shadowMain};
         background-color: #fff;
     }

@@ -8,7 +8,6 @@ import { Wrapper, Container, MenuLateral, Landing } from './styles';
 import Logo from '../components/template/Logo';
 import Nav from '../components/template/Nav';
 import Header from '../components/template/Header';
-/* import Main from '../components/template/Main'; */
 import Footer from '../components/template/Footer';
 
 const Home = () => {
