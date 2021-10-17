@@ -1,11 +1,19 @@
 {
-    "users": [{
-        "id": 1,
-        "name": "Arthur Fortunato",
-        "email": "arthur@gmail.com"
-    }, {
-        "id": 2,
-        "name": "Anderson Fortunato",
-        "email": "anderson@gmail.com"
-    }]
+  "users": [
+    {
+      "name": "Arthur Fortunato",
+      "email": "luizarthur.fortunato@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Meu Linkedin",
+      "email": "https://www.linkedin.com/in/arthur-forturnato-643828187/",
+      "id": 2
+    },
+    {
+      "name": "Meu Github",
+      "email": "https://github.com/arthurfortunato",
+      "id": 3
+    }
+  ]
 }

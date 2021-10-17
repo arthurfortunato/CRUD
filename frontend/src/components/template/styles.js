@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Logo = styled.img`
    height: 100px;
+   margin-left: 50px
 `;
 
 export const Nav = styled.aside`
