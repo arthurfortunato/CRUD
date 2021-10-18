@@ -20,7 +20,7 @@ export const Container = styled.aside`
 export const MenuLateral = styled.aside`
     display: flex;
     flex-direction: column;
-    background-color: #1e3544;
+    background-color: ${(props) => props.theme.colors.background};
     width: 240px;
 
     @media(max-width: 768px) {

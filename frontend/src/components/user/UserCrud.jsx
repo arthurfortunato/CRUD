@@ -153,8 +153,8 @@ export default class UserCrud extends Component {
                 {this.renderTable()}
             </Main>
         )
-    }
-}
+    };
+};
 
 
 

@@ -28,7 +28,7 @@ const Home = () => {
                 </Container>
             </Wrapper>
         </BrowserRouter>
-    )
+    );
 };
 
 export default Home;

@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Logo = styled.img`
    height: 100px;
    width: 100%;
-
+   padding: 25px;
+    
    @media(max-width: 768px) {
     display: block;
 }

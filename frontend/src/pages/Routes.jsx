@@ -9,6 +9,6 @@ export default function props() {
             <Route path='/users' component={UserCrud} />
             <Redirect from='*' to='/' />
         </Switch>
-    )
+    );
+};
 
-}
